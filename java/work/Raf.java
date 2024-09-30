@@ -9,16 +9,14 @@ public class Raf {
     public Raf(String pathF){
         this.pathF = pathF;
     }
-
     public void gestionFile(int choice){
         try (RandomAccessFile raf = new RandomAccessFile(pathF, "rw")) {
             switch (choice){
                 case 1:
-                    System.out.print("In: ");
                     Scanner scanner = new Scanner(System.in);
                     String input;
                     while (true) {
-                        System.out.print("Inserisci un numero intero (o 'exit' per uscire): ");
+                        System.out.print("Inter || 'exit': ");
                         input = scanner.nextLine();
                         if (input.equalsIgnoreCase("exit")) {
                             break;
