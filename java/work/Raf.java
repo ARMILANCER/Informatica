@@ -1,17 +1,8 @@
 package work;
-
-
-
-import com.sun.jdi.Value;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.RandomAccessFile;
 import java.io.IOException;
-import java.util.Optional;
 import java.util.Scanner;
 import java.util.Vector;
-
 public class Raf {
     private String pathF;
     private Vector<Integer> data = new Vector<>();
