@@ -1,6 +1,6 @@
 package Archive;
-
 public class Album {
+    private int id;
     private String name;
     private String artist;
     private int year;
@@ -10,10 +10,7 @@ public class Album {
         this.artist = artist;
         this.year = year;
     }
-    public Album(){
-        
-    }
-
+    public Album(){}
     public String getName() {
         return name;
     }
@@ -37,4 +34,7 @@ public class Album {
     public void setYear(int year) {
         this.year = year;
     }
+    public int getId() {return id;}
+
+    public void setId(int id) {this.id = id;}
 }
