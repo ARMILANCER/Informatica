@@ -1,21 +1,26 @@
 package Archive;
+public class Map{
+    private String Name;
+    private int index;
 
-public class Map {
-    public void addElement(){
-
-        // TODO: call organizeMap
-    }
-    // is called every time is added a element
-    private void organizeMap(){
-
-    }
-    public void searchByKey(){
-
+    public Map(String name, int index) {
+        this.Name = name;
+        this.index = index;
     }
 
-    public String toString(){
-
-        return "to define";
+    public String getName() {
+        return Name;
     }
 
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
 }
